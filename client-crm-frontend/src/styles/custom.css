@@ -1,0 +1,114 @@
+/* Custom styles */
+body {
+  background-color: #f8f9fa;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+}
+.login-card {
+  max-width: 500px;  /* Fixed width */
+  margin: 0 auto;    /* Center it */
+}
+
+.status-new {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.status-contacted {
+  background-color: #ffc107;
+  color: black;
+}
+
+.status-converted {
+  background-color: #28a745;
+  color: white;
+}
+
+.status-lost {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Dashboard stats cards */
+.bg-primary {
+  background: linear-gradient(45deg, #007bff, #0056b3);
+}
+
+.bg-success {
+  background: linear-gradient(45deg, #28a745, #1e7e34);
+}
+
+.bg-info {
+  background: linear-gradient(45deg, #17a2b8, #117a8b);
+}
+
+.bg-warning {
+  background: linear-gradient(45deg, #ffc107, #d39e00);
+}
+
+/* Form styles */
+.form-control:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
+}
+
+/* Table styles */
+.table-hover tbody tr:hover {
+  background-color: rgba(0,123,255,0.05);
+}
+
+/* Button styles */
+.btn-primary {
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(45deg, #0056b3, #003d80);
+}
+
+/* Alert animations */
+.alert {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Loading spinner */
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .card:hover {
+    transform: none;
+  }
+}
